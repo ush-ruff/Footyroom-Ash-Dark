@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.0.1
+@version        1.0.2
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -745,9 +745,9 @@ TABLE OF CONTENTS
   }
 
   .ls-match {
-    --goal: url(https://www.flaticon.com/svg/static/icons/svg/1800/1800944.svg);
-    --penalty: url(https://image.flaticon.com/icons/svg/2716/2716196.svg);
-    --second-yellow: url(https://www.flaticon.com/svg/static/icons/svg/867/867454.svg);
+    --goal: url(images/football.svg);
+    --penalty: url(images/penalty-kick.svg);
+    --second-yellow: url(images/double-yellow-card.svg);
   }
 
   .penalty-score .icon-penalty {
