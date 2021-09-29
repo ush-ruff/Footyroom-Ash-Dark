@@ -35,10 +35,12 @@ Once you have installed the browser extension click on the link below to install
 
 ![Comment Section Post a Reply](images/scr05.png)
 
-### League Table
-![League Table 1](images/scr06.png)
+### Competitions
+![League Table](images/scr06.png)
 
-![League Table 2](images/scr06.png)
+![Stats](images/scr12.png)
+
+![Fixtures](images/scr13.png)
 
 ### Tips
 ![Tips](images/scr07.png)
