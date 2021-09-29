@@ -50,5 +50,8 @@ Once you have installed the browser extension click on the link below to install
 
 ![Forum Post](images/scr09.png)
 
+### Match Preview
+![Match Preview](images/scr14.png)
+
 ## License
 [GNU GPLv3](LICENSE)
