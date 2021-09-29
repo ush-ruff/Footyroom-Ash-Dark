@@ -1,0 +1,2266 @@
+/* ==UserStyle==
+@name           9gag Gradient Dark - Revamped
+@namespace      github.com/ush-ruff
+@homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
+@updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
+@version        1.0.0
+@description    A better looking dark theme for 9gag.
+@author         ushruff
+@license        GNU GPLv3
+==/UserStyle== */
+
+@-moz-document domain("footyroom.com"), domain("footyroom.co") {
+  /* -------------------------------------------------------------------------- */
+  /*
+TABLE OF CONTENTS
+
+1.0 - Header
+  1.1 - Dropdowns
+  1.2 - Login Btn
+  1.3 - Changelog
+
+2.0 - Predictor
+  2.1 - Leaderboard & Help
+
+3.0 - News
+  3.1 - Transfer Center
+
+4.0 - Previews
+
+5.0 - Betting Tips
+  5.1 - More Tips
+
+6.0 - Top Posts
+
+7.0 - Matches
+  7.1 - Fixtures
+  7.2 - League Tables
+    7.2.1 - Champions League
+    7.2.2 - World Cup
+    7.2.3 - Calendar Layout
+  7.3 - League Stats
+  7.4 - Chat
+  7.5 - Datepicker
+
+8.0 - Posts
+  8.1 - Load More Button
+
+9.0 - Footer
+
+10.0 - Search
+
+11.0 - Hall of Fame
+
+12.0 - Match Pages
+  12.1 - Formations
+  12.2 - Stats
+  12.3 - Match Poll
+  12.4 - Ratings
+  12.5 - Comments
+
+13.0 - DMCA, Feedback
+
+14.0 - Signup
+
+15.0 - Forum
+
+*/
+  /* -------------------------------------------------------------------------- */
+
+  html,
+  body {
+    font-family: Roboto;
+    color: #ccc;
+    background-color: #1e1e1e;
+    background-image: url(https://i.imgur.com/H0t5Enc.png);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 1.0 - Header */
+  /* -------------------------------------------------------------------------- */
+
+  .site-header-main {
+    background-color: #131313;
+    background-image: linear-gradient(180deg, #434343, #131313);
+    color: #ccc;
+  }
+
+  .site-header-bar {
+    box-shadow: 0 2px 6px 0 black;
+  }
+
+  .extras-summary {
+    color: #aaa;
+  }
+
+  .main-nav li.is-active,
+  .main-nav li:hover {
+    background: linear-gradient(180deg, #232323, #131313);
+    border-radius: 5px;
+    color: #ddd;
+  }
+
+  .bar-nav li:hover {
+    color: #eee;
+  }
+
+  .bar-nav li.is-active {
+    color: #fff;
+  }
+
+  .search-bar {
+    background: #454545;
+    border-radius: 4px;
+    color: #ccc;
+    box-shadow: inset 0 -1.5px 1px #111, inset 0 1.5px 1px #232323;
+  }
+
+  header img {
+    filter: invert(80%) hue-rotate(180deg);
+  }
+
+  .slider {
+    background: #6e6e6e;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 1.1 - Dropdowns */
+  /* -------------------------------------------------------------------------- */
+
+  .dropdown-nav {
+    background: #3a3a3a;
+    box-shadow: 0 0 2px 1px black;
+  }
+
+  .all-leagues-column {
+    border-right: 1px solid black;
+  }
+
+  .all-leagues-b-b {
+    border-bottom: 1px solid black;
+  }
+
+  .flg-uefa-cl {
+    filter: invert(1);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 1.2 - Login Btn */
+  /* -------------------------------------------------------------------------- */
+
+  .user-bar {
+    background: #2e2e2e;
+    background-image: linear-gradient(180deg, #2e2e2e, #1e1e1e);
+    border: 1px solid #333;
+    box-shadow: 0 0 5px 0 black;
+  }
+
+  .user-main:hover {
+    background-image: linear-gradient(180deg, #3e3e3e, #1e1e1e);
+  }
+
+  .user-nav-link:hover,
+  .login-form .login-btn:hover {
+    background: #3e3e3e;
+  }
+
+  .user-dropdown {
+    background: #2e2e2e;
+    box-shadow: 0 0 4px #1e1e1e;
+    border: 1px solid #1e1e1e;
+  }
+
+  .fb-login,
+  .login-form {
+    border-bottom: 1px solid #131313;
+  }
+
+  .form-control {
+    background-color: #454545;
+    border: 1px solid #222;
+    box-shadow: inset 0 1px 1px #222;
+    color: #ccc;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 1.3 Changelog */
+  /* -------------------------------------------------------------------------- */
+
+  #HW_frame_cont {
+    background: transparent;
+    border: 1px solid #1e1e1e;
+  }
+
+  #HW_frame {
+    background: #2e2e2e;
+    box-shadow: 0 0 4px black;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 2.0 - Predictor */
+  /* -------------------------------------------------------------------------- */
+
+  .predictor {
+    box-shadow: 0 0 3px 0 black;
+    border-bottom: 1px solid black;
+  }
+
+  .expandable {
+    box-shadow: 0 2px 6px 0 black;
+  }
+
+  .expandable__control {
+    color: #f1c40f;
+  }
+
+  .predictor-signup {
+    background: #dd5344;
+  }
+
+  .predictor-signup a {
+    font-weight: 400;
+    color: blue;
+  }
+
+  .expandable__overlay {
+    background: linear-gradient(0deg, #434343 110px, hsla(0, 0%, 100%, 0) 80%);
+  }
+
+  .round-summary {
+    background-color: #2e2e2e;
+    color: #ccc;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .predictor-round-title {
+    color: #ddd;
+  }
+
+  .predictor-round-top-score,
+  .prediction-indicator--alt {
+    border-color: #1e1e1e;
+  }
+
+  .predictor-fixtures {
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .predictor-match {
+    border-bottom: 1px solid #1e1e1e;
+    color: #bbb;
+  }
+
+  .predictor-match .ls-match-strip {
+    background: #3e3e3e;
+    border-left: 3px solid #3e3e3e;
+  }
+
+  .predictor-match .ls-match-strip:hover {
+    background: #333;
+    border-left: 3px solid #2a2a2a;
+    transition: ease-in-out .4s;
+  }
+
+  .prediction-team-container,
+  .predictor-odds-toggle {
+    color: #ccc;
+  }
+
+  .prediction-input-score {
+    border: 1px solid #2e2e2e;
+    background: #777;
+  }
+
+  .prediction-input-score:disabled {
+    background: #3e3e3e;
+  }
+
+  .predictor-header {
+    filter: invert(80%) hue-rotate(180deg) !important;
+  }
+
+  .predictor-title,
+  .predictor-nav a {
+    color: black;
+  }
+
+  .predictor-nav {
+    border-left: 1px solid #aaa;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 2.1 - Leaderboard & Help */
+  /* -------------------------------------------------------------------------- */
+
+  .predictor-sub-nav {
+    background: #3a3a3a;
+  }
+
+  .predictor-board-header,
+  .predictor-board-footer {
+    background: #3f3f3f;
+    border-bottom: 1px solid #2e2e2e;
+    border-top: 1px solid #2e2e2e;
+  }
+
+  .predictor-phase {
+    background: #2e2e2e;
+    border: 1px solid #1e1e1e;
+    color: #ccc;
+  }
+
+  .predictor-board-row {
+    background: #4e4e4e;
+    border-bottom: 1px solid #3e3e3e;
+  }
+
+  .predictor-text-page {
+    background: #434343;
+    color: #ccc;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 3.0 - News */
+  /* -------------------------------------------------------------------------- */
+
+  .home-articles-header {
+    background-color: #252525;
+    color: #bbb;
+  }
+
+  .home-article {
+    color: #ccc;
+  }
+
+  .instagram-widget {
+    border: 1px solid #2e2e2e;
+  }
+
+  .articles-index-title {
+    margin-top: 15px;
+  }
+
+  .card--article .card-body {
+    background: #2e2e2e;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 3.1 - Transfer Center */
+  /* -------------------------------------------------------------------------- */
+
+  .tc-countdown-numbers {
+    color: #000;
+  }
+
+  .tc,
+  .filter--underline .filter__item.is-selected {
+    color: #eee;
+  }
+
+  .filter--underline .filter__item {
+    color: #ccc;
+  }
+
+  .nav-tc-seasons {
+    color: #aaa;
+  }
+
+  .btn-white {
+    background: #2e2e2e;
+    color: #ccc;
+    box-shadow: inset 0 -2px 0 0 #1e1e1e, inset 0 0 0 1px #1e1e1e;
+  }
+
+  .btn:focus:hover {
+    box-shadow: inset 0 0 0 1px #51a7e8, inset 0 0 30px 10px rgba(0, 0, 0, .2);
+  }
+
+  .dropdown-menu {
+    background: #2e2e2e;
+    box-shadow: 0 0 4px black;
+  }
+
+  .dropdown-menu .active a,
+  .dropdown-menu li a:hover {
+    background: #3e3e3e;
+  }
+
+  .dropdown-menu li a {
+    color: #ccc;
+  }
+
+  .tc-team {
+    border-bottom: 2px solid #1e1e1e;
+    background-color: #2e2e2e;
+  }
+
+  .tc-inout-gallery {
+    background-color: #3e3e3e;
+  }
+
+  .tdetails {
+    color: #909090;
+  }
+
+  .tc-latest li {
+    border-bottom: 1px dashed black;
+  }
+
+  .tc-latest strong {
+    color: #e62d2d;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 4.0 - Previews */
+  /* -------------------------------------------------------------------------- */
+
+  #previews {
+    background-image: none;
+    border-bottom: 1px solid #3a3a3a;
+  }
+
+  #previews:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: url("/pics/dotted_grey.gif");
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    z-index: -1;
+    filter: invert(80%) hue-rotate(180deg);
+  }
+
+  #previews .header h1 {
+    background: #2a2a2a;
+    color: #ccc;
+  }
+
+  .main li,
+  .menu li a {
+    background: #2e2e2e !important;
+    color: #aaa !important;
+  }
+
+  #previews .match-box .top-part {
+    background: #999;
+  }
+
+  .match-box a {
+    color: #006aff;
+    font-weight: bold;
+  }
+
+  #previews .match-box .team-name,
+  .preview-section header h2 {
+    color: #ccc;
+  }
+
+  #previews .match-box .vs {
+    height: 40px;
+    top: 20px;
+    background: url(https://i.imgur.com/iT0iWJY.png) no-repeat center / 40px;
+    color: transparent;
+    filter: invert(1);
+  }
+
+  .preview-content {
+    background: #2a2a2a url(https://i.imgur.com/pp4MzII.png) repeat-y;
+    color: #ccc;
+  }
+
+  .preview-formations header {
+    border-top-color: #555;
+  }
+
+  .preview-form .form-list .draw {
+    background: #7f8c8d;
+  }
+
+  .preview-form .form-list li {
+    box-shadow: 0 7px 13px -10px #131313;
+  }
+
+  .preview-prediction-box {
+    background: #2a2a2a;
+  }
+
+  .preview-prediction-box .value {
+    background: #2e2e2e;
+    border-color: #1e1e1e;
+  }
+
+  .preview-content .h2h-donut .chart-center,
+  .preview-content .season-donut .chart-center {
+    filter: invert(0.9);
+    color: #222;
+  }
+
+  .preview-vote-btn {
+    background: #16a085;
+  }
+
+  .preview-vote-btn:hover,
+  .preview-vote-btn:active {
+    background: #1abc9c;
+  }
+
+  .preview-form .form-list .win {
+    background: #1cb25c;
+  }
+
+  .preview-form .form-list .lose {
+    background: #c0392b;
+  }
+
+  .donut-chart .svg .labels circle,
+  .donut-chart .svg .labels text {
+    fill: #aaa;
+  }
+
+  .donut-chart .svg .labels path {
+    stroke: #aaa;
+  }
+
+  .preview-season .season-donut .donut-chart .chart>div {
+    filter: hue-rotate(5deg) brightness(0.6) saturate(1.8);
+  }
+
+  .preview-content .h2h-donut .donut-chart .chart>div:nth-child(2)>div {
+    background: #3742fa !important;
+  }
+
+  .preview-content .h2h-donut .donut-chart .chart>div:nth-child(3)>div {
+    background: #2214b5 !important;
+  }
+
+  .preview-season .stat-list .right-bar {
+    background: rgb(255, 0, 0);
+  }
+
+  .preview-scorers .away .horz-bars .fill,
+  .score-poll-bar.away,
+  .scoreline-poll-chart.away .horz-bars .fill,
+  .score-poll-vertical-bars .awaywin {
+    background: rgba(255, 0, 0, .27);
+  }
+
+  .horz-bars .horz-bar .shell,
+  .horz-bars li .shell {
+    background: rgba(0, 0, 0, 0.2)
+  }
+
+  .score-poll-bar.draw,
+  .score-poll-vertical-bars .draw {
+    background: rgba(99, 99, 99, 0.5);
+  }
+
+  .formations .probable-banner {
+    background: #2e2e2e;
+    color: #ccc;
+    border-bottom: 1px solid #1e1e1e;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 5.0 - Betting Tips */
+  /* -------------------------------------------------------------------------- */
+
+  .home-tips {
+    background: none;
+    color: #ccc;
+  }
+
+  .home-tips:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: url("/pics/dotted_grey.gif");
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    z-index: -1;
+    filter: invert(0.8) hue-rotate(180deg);
+  }
+
+  .home-tips-wrap {
+    background: rgba(0, 0, 0, .08);
+  }
+
+  .home-tip,
+  .home-tip-result {
+    background-color: #4e4e4e;
+  }
+
+  .home-tip-info,
+  .home-tip-prediction {
+    border-right: 2px solid #2e2e2e;
+    color: #ccc;
+  }
+
+  .home-tip-odds {
+    background: #4e4e4e;
+    border-left: none;
+  }
+
+  .home-tip-result {
+    border-left: 2px solid #2e2e2e;
+  }
+
+  .home-tip--correct {
+    background: #2ecc71 !important;
+    color: #2f2f2f;
+    font-weight: bold;
+    letter-spacing: .6px;
+  }
+
+  .home-tips-more {
+    color: #ccc;
+  }
+
+  #mainBox {
+    box-shadow: 0 2px 3px 1px black;
+    background: #434343;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 5.1 - More Tips */
+  /* -------------------------------------------------------------------------- */
+
+  .btip {
+    background: #3e3e3e;
+    border: 1px solid black;
+    color: #ccc;
+  }
+
+  .scoreline-status {
+    color: #aaa;
+  }
+
+  .btip-icon {
+    background-color: #3e3e3e;
+    color: #eee;
+  }
+
+  .btip-footer {
+    background: #2e2e2e;
+  }
+
+  .btip--correct {
+    background: #27ae60 !important;
+  }
+
+  .btip--wrong {
+    background: #e74c3c !important;
+  }
+
+  .btip-result-text {
+    background: rgba(62, 62, 62, .2);
+    border: 1px solid #1e1e1e;
+  }
+
+  .lucrum-premium-header {
+    background: #2e2e2e url(/pics/grid-pattern-2.png);
+    color: #eee;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 6.0 - Top Posts */
+  /* -------------------------------------------------------------------------- */
+
+  .home-lemix {
+    background: #2e2e2e;
+    border-bottom: 2px solid #333;
+    box-shadow: -1px 2px 3px 0 black, 1px 2px 3px 0 black;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.0 - Matches */
+  /* -------------------------------------------------------------------------- */
+
+  .ls-match {
+    color: #ccc;
+    border-top: 1px solid #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+  }
+
+  .ls-match-strip {
+    border-left: 3px solid #2e2e2e;
+    background: #2e2e2e;
+  }
+
+  .ls-match-strip:hover {
+    background: #3e3e3e;
+  }
+
+  .ls-match-strip .red-card {
+    background: #ce2128;
+  }
+
+  .ls-match-extra {
+    background: #3c3c3c;
+    border-top: 1px solid #2a2a2a;
+  }
+
+  .ls-incident {
+    color: #aaa;
+  }
+
+  .ls-match-footer {
+    background: #333;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .ls-match-group-header {
+    background: #434343;
+    color: #ccc;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .ls-match-strip .winner,
+  .ls-match-strip .winner-star,
+  .ls-match-group-header a,
+  .chat-message {
+    color: #ccc;
+  }
+
+  .ls-datepicker {
+    box-shadow: 0 -3px 6px -1px black;
+    border-color: black;
+  }
+
+  .no-matches-warning {
+    background-color: #6e6e6e;
+    border-color: #1e1e1e;
+  }
+
+  .ls-match {
+    --goal: url(https://www.flaticon.com/svg/static/icons/svg/1800/1800944.svg);
+    --penalty: url(https://image.flaticon.com/icons/svg/2716/2716196.svg);
+    --second-yellow: url(https://www.flaticon.com/svg/static/icons/svg/867/867454.svg);
+  }
+
+  .penalty-score .icon-penalty {
+    position: relative;
+    top: -2px;
+    background: var(--penalty);
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .ls-incidents-list {
+    padding: 5px 0 15px;
+  }
+
+  .ls-incident {
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .ls-incident span:is(.icon-r, .icon-red-card) {
+    width: 14.8px;
+    height: 19px;
+    top: 5px;
+    margin-left: 2px;
+    background: #ce2128;
+    border-radius: 2px;
+    transform: rotate(10deg);
+  }
+
+  .ls-incident span:is(.icon-r, .icon-red-card) .hint-top {
+    transform: rotate(-10deg);
+  }
+
+  .ls-incident span:is(.icon-second-yellow, .icon-y2),
+  .ls-incident span:is(.icon-eg, .icon-g, .icon-goal),
+  .ls-incident span:is(.icon-eog, .icon-og, .icon-own-goal),
+  .ls-incident span:is(.icon-ep, .icon-p, .icon-penalty, .icon-ps),
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm) {
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ls-incident span:is(.icon-second-yellow, .icon-y2) {
+    margin-left: 2px;
+    background-image: var(--second-yellow);
+  }
+
+  .ls-incident span:is(.icon-eg, .icon-g, .icon-goal),
+  .ls-incident span:is(.icon-eog, .icon-og, .icon-own-goal) {
+    background-image: var(--goal);
+  }
+
+  .ls-incident span:is(.icon-eog, .icon-og, .icon-own-goal)::before {
+    content: "OG";
+    position: absolute;
+    width: 85%;
+    height: 12px;
+    left: 45%;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(25, 25, 25, .75);
+    color: #ccc;
+  }
+
+  .ls-incident span:is(.icon-ep, .icon-p, .icon-penalty, .icon-ps),
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm) {
+    margin-left: 2px;
+    background-image: var(--penalty);
+  }
+
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm) {
+    position: relative;
+  }
+
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm)::before,
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm)::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 10px;
+    background: #b81010;
+    border-radius: 100vw;
+  }
+
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm)::before {
+    transform: rotate(-45deg);
+  }
+
+  .ls-incident span:is(.icon-epm, .icon-penalty-miss, .icon-pm, .icon-psm)::after {
+    transform: rotate(45deg);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.1 - Fixtures */
+  /* -------------------------------------------------------------------------- */
+
+  .site-tree {
+    border-bottom: 1px solid #1e1e1e;
+    background: #2e2e2e;
+    color: #ccc;
+    box-shadow: 0 0 3px 1px black;
+    background-image: linear-gradient(180deg, #222 50%, #2e2e2e);
+  }
+
+  .site-tree .separator {
+    filter: invert(0.8) brightness(0.8);
+  }
+
+  .site-tree-select,
+  .stage-select {
+    background: #3e3e3e;
+    box-shadow: inset 0 -1px 0 1px rgba(30, 30, 30, .5), 0 0 6px 0 #1e1e1e;
+    border: 1px solid #131313;
+    padding-right: 28px;
+    cursor: pointer;
+  }
+
+  .site-tree-select:hover,
+  .stage-select:hover {
+    background: linear-gradient(180deg, #4a4a4a, #3e3e3e);
+    box-shadow: inset 0 -1px 0 1px rgba(40, 40, 40, .5), 0 0 6px 0 #1e1e1e;
+  }
+
+  .site-tree-item,
+  .stage-select {
+    position: relative;
+  }
+
+  select+.stage-select::after,
+  .site-tree-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    border: 6px solid transparent;
+    border-top-color: currentcolor;
+    pointer-events: none;
+  }
+
+  select+.stage-select::after {
+    top: calc(50% - 3px);
+    right: calc(100% + 26px);
+    left: -26px;
+  }
+
+  .site-tree-item:nth-child(2)::after {
+    top: calc(50% - 3px);
+    right: 7px;
+  }
+
+  .site-tree-select option,
+  .stage-select option {
+    background: #2e2e2e;
+  }
+
+  .simple-tab {
+    color: #ccc;
+  }
+
+  .simple-tab.active {
+    font-weight: bold;
+  }
+
+  .ca-date-header {
+    background: #434343;
+    color: #ccc;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .ca-fixt-footer {
+    background: #333;
+    border-bottom: 1px solid #1e1e1e;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .stage-select .dropdown-menu .divide {
+    border-bottom: 1px dotted #555;
+    background: #555;
+  }
+
+  .ca-fixt-more {
+    color: #ddd;
+    font-weight: bolder;
+    background: #16a085;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.2 - League Tables */
+  /* -------------------------------------------------------------------------- */
+
+  .ec-slide-shell {
+    background: #333;
+    border-bottom: 1px solid #1e1e1e;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .table-row {
+    color: #ccc;
+    border-bottom: 1px solid black;
+  }
+
+  .table-row:nth-of-type(2n) .table-cell:not(.sorted):not([ng-class="{sorted: sortie == 'data.points.value'}"]) {
+    background: #4e4e4e;
+  }
+
+  .table-head {
+    color: #888;
+    background: #222;
+    border-top: 1px solid black;
+  }
+
+  .table-cell.sorted {
+    background: #434343;
+  }
+
+  h2.table-title {
+    background: #252525;
+  }
+
+  .legend.ac,
+  .legend.afccl,
+  .legend.cafcl,
+  .legend.cfu,
+  .legend.cl,
+  .legend.concl,
+  .legend.copal,
+  .legend.ofccl {
+    background: #003e81;
+  }
+
+  .legend.afcclq,
+  .legend.clq,
+  .legend.copalq,
+  .legend.ofcclq,
+  .legend.pac {
+    background: #206b9c;
+  }
+
+  .legend.afcc,
+  .legend.cafcc,
+  .legend.copas,
+  .legend.el {
+    background: #d35400;
+  }
+
+  .legend.afccq,
+  .legend.elq {
+    background: #f39c12;
+  }
+
+  .legend.prel,
+  .legend.relpo {
+    background: #a23024;
+  }
+
+  .legend.rel {
+    background: #660000;
+  }
+
+  .league-table .table-cell .legend {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    border-radius: 0;
+    color: #ddd;
+  }
+
+  .table-form {
+    filter: brightness(0.75) saturate(1.4);
+  }
+
+  .league-table .table-row .table-cell[ng-class="{sorted: sortie == 'data.points.value'}"] {
+    background: #252525;
+  }
+
+  .table-movement--down {
+    color: #e63939;
+  }
+
+  .table-select a {
+    font-weight: 500;
+    border-bottom-color: #aaa;
+    color: #ccc;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.2.1 - Champions League */
+  /* -------------------------------------------------------------------------- */
+
+  .guide-uefacl {
+    color: #ccc;
+    border-bottom-color: #1e1e1e;
+  }
+
+  .guide-header {
+    border-top-color: #1e1e1e;
+  }
+
+  .guide-col-round {
+    border-right-color: black;
+  }
+
+  .guide-body {
+    background-color: #555;
+    background-image: url(https://i.imgur.com/GZlRGC5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .guide-body-row {
+    background: rgba(255, 255, 255, .1);
+  }
+
+  .guide-body .guide-col-final {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .guide-col-draw {
+    background: rgba(35, 35, 35, .5);
+    border-right-color: black;
+  }
+
+  .guide-col-leg.guide-leg-1 {
+    border-color: black;
+  }
+
+  .guide-body-row:not(.guide-leg-row) .guide-col-leg:not(.guide-leg-1) {
+    border-right: 1px solid black;
+  }
+
+  .guide-body-row.guide-leg-row .guide-col-leg:is(:nth-child(2), :nth-child(5), :nth-child(8)) {
+    border-right: 1px dashed black;
+  }
+
+  .guide-body-row.guide-leg-row .guide-col-leg:is(:nth-child(3), :nth-child(6), :nth-child(9)) {
+    border-right: 1px solid black;
+  }
+
+  .guide-team-spot {
+    box-shadow: inset 0 0 22px 1px rgba(35, 92, 247, .8);
+    border-color: #034efc;
+  }
+
+  .guide-match-box {
+    border-color: #1e1e1e;
+  }
+
+  .guide-match-info {
+    background-color: #1e1e1e;
+  }
+
+  .guide-match-hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+    border: 1px dashed #444;
+    border-radius: 8px;
+  }
+
+  .guide-col-leg.guide-leg-1 .guide-match-team:nth-child(3n+1) {
+    background-color: rgba(255, 143, 61, 0.55);
+    border-radius: 8px 8px 0 0;
+  }
+
+  .guide-col-leg:not(.guide-leg-1) .guide-match-team:nth-child(3n) {
+    background-color: rgba(255, 143, 61, 0.55);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .guide-col-leg.guide-leg-1 .guide-match-team:nth-child(3n) {
+    background-color: rgba(70, 223, 123, 0.55);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .guide-col-leg:not(.guide-leg-1) .guide-match-team:nth-child(3n+1) {
+    background-color: rgba(70, 223, 123, .55);
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.2.2 - World Cup */
+  /* -------------------------------------------------------------------------- */
+
+  .tournament-guide {
+    background-color: #3e3e3e;
+    border-top-color: #131313;
+    border-bottom-color: #131313;
+    color: #ccc;
+  }
+
+  .tournament-guide-header {
+    background: linear-gradient(#2e2e2e, #3e3e3e 50%);
+  }
+
+  .stage-names {
+    border-bottom-color: black;
+  }
+
+  .knockout-matches::before,
+  .knockout-matches::after {
+    content: "";
+    position: absolute;
+    height: calc(100% + 25px);
+    width: calc(100% + 22px);
+    top: -25px;
+    left: -11px;
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .knockout-matches::after {
+    background: url(https://i.imgur.com/3kwwUio.png) no-repeat center -50px / 1600px;
+    z-index: -1;
+  }
+
+  .ko-match {
+    background-color: #2e2e2e;
+    border: 1px solid #1e1e1e;
+  }
+
+  .ko-match .team:nth-of-type(1) {
+    background-color: rgba(61, 181, 255, .55);
+    border-radius: 5px 5px 0 0;
+  }
+
+  .ko-match .team:nth-of-type(3) {
+    background-color: rgba(223, 70, 83, .55);
+  }
+
+  .ko-match .date {
+    border-top-color: #1e1e1e;
+  }
+
+  .ko-match .middle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1e1e1e;
+    border-radius: 0;
+  }
+
+  .ko-match .middle .icons {
+    top: 46px;
+  }
+
+  .ko-match .middle.finished-with-pens {
+    padding-left: 16px;
+    font-size: 13px;
+  }
+
+  .ko-match .middle.finished-with-pens .icons {
+    top: 48px;
+    right: 7px;
+  }
+
+  .ko-match .overlay-link {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px dashed #444;
+    border-radius: 5px;
+    color: #ddd;
+  }
+
+  .bracket::after {
+    border: 2px dashed #131313;
+    border-left: none;
+  }
+
+  .bracket--right::after {
+    border-right: none;
+    border-left: 2px dashed #131313;
+  }
+
+  .tournament-guide-table tbody {
+    background-color: #252525;
+  }
+
+  .tournament-guide-table tbody tr:nth-child(2n) {
+    background-color: #2e2e2e;
+  }
+
+  .tournament-guide-icon {
+    color: #ccc;
+  }
+
+  .tournament-guide-status {
+    top: 33px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 0;
+  }
+
+  .tournament-guide-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #444;
+    color: #ddd;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.2.3 - Calendar Layout */
+  /* -------------------------------------------------------------------------- */
+
+  .calendarMonth {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #ddd;
+  }
+
+  .calendarTop img {
+    filter: invert(0.85);
+  }
+
+  .calendarTable tr {
+    display: flex;
+  }
+
+  .calendarTable td {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 0 5px 15px;
+    background-color: #333;
+    border-color: #131313;
+  }
+
+  .calendarTable td+td {
+    border-left: none;
+  }
+
+  .calendarDate {
+    position: relative;
+    height: 20px;
+    width: 132px;
+    top: -1px;
+    left: -6px;
+    margin-bottom: 15px;
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #555;
+    border-color: #131313;
+  }
+
+  .calendarTable td+td .calendarDate {
+    border-right: none;
+  }
+
+  .calendarTable ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .calendarTable li {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .calendarTeamName,
+  .calendarScore {
+    font-family: Rubik, sans-serif;
+    font-size: 13px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.3 - League Stats */
+  /* -------------------------------------------------------------------------- */
+
+  .stats-card {
+    box-shadow: 0 0 3px 2px #1e1e1e;
+    background: #3e3e3e;
+  }
+
+  .stats-card h3 {
+    color: #ccc;
+    border-bottom: 1px solid #2e2e2e;
+    background: #3a3a3a;
+  }
+
+  .stats-card .table-row {
+    border-bottom: 1px dotted #1e1e1e;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.4 - Chat */
+  /* -------------------------------------------------------------------------- */
+
+  .chat-viewport {
+    box-shadow: 0 0 6px 1px black;
+    border-color: black;
+  }
+
+  .chat-screen,
+  .chat-settings {
+    background: #3c3c3c;
+  }
+
+  .chat-menu,
+  .chat-composer {
+    background: #333;
+  }
+
+  .chat-menu {
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .filter--flat .filter__item {
+    background: #2e2e2e;
+    color: #bbb;
+    border-color: #1e1e1e;
+  }
+
+  .chat-input textarea {
+    background: #454545;
+    border-color: #1e1e1e;
+  }
+
+  .chat-screen {
+    --chat-blue: #0202db;
+    --chat-purple: #ca16ca;
+  }
+
+  .chat-message a.username[style="color: blue"] {
+    color: var(--chat-blue) !important;
+  }
+
+  .chat-message a.username[style="color: purple"] {
+    color: var(--chat-purple) !important;
+  }
+
+  .chat-colors li[style="background: blue none repeat scroll 0% 0%;"] {
+    background-color: var(--chat-blue) !important;
+  }
+
+  .chat-colors li[style="background: purple none repeat scroll 0% 0%;"] {
+    background-color: var(--chat-purple) !important;
+  }
+
+  .litelay {
+    background: #3c3c3c;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 7.5 - Datepicker */
+  /* -------------------------------------------------------------------------- */
+
+  .fr-datepicker .strip .next i:hover,
+  .fr-datepicker .strip .prev i:hover {
+    padding-left: 1px;
+    border-radius: 100vw;
+    color: #09f;
+    background: #fff;
+  }
+
+  .fr-datepicker .strip .date:hover i {
+    border-radius: 2px;
+    color: #09f;
+    background: #fff;
+  }
+
+  .fr-datepicker .years-select {
+    -moz-appearance: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-right: 35px;
+  }
+
+  .fr-datepicker .years {
+    position: relative;
+  }
+
+  .fr-datepicker .years::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 4px);
+    right: 55px;
+    transform: translate(0, -50%);
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    pointer-events: none;
+  }
+
+  .talkroom .fr-datepicker .years::after {
+    right: 40px
+  }
+
+  .fr-datepicker .years-select option {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    background: #333;
+  }
+
+  .fr-datepicker .calendar li.disabled {
+    color: #999;
+  }
+
+  .fr-datepicker .calendar li.disabled:hover span {
+    background-color: transparent;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 8.0 - Posts */
+  /* -------------------------------------------------------------------------- */
+
+  .tc-home-guide,
+  .posts-page {
+    background-color: #434343;
+    box-shadow: -5px 0 3px -4px black, 5px 0 3px -4px black, 0 4px 3px -3px black;
+    color: #ccc;
+  }
+
+  .posts-page .card {
+    position: relative;
+  }
+
+  .card-title a {
+    color: #ccc;
+  }
+
+  .posts-page .card-title a::before {
+    content: attr(href);
+    position: absolute;
+    height: 80%;
+    width: 93.8%;
+    top: 0;
+    color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg height='48' viewBox='0 0 48 48' width='48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h48v48H0V0z' fill='none'/%3E%3Cpath fill='%23ccc' d='M26.1 19.58L20 15v18l6.1-4.58L32 24zm0 0L20 15v18l6.1-4.58L32 24zm0 0L20 15v18l6.1-4.58L32 24zM22 8.14V4.1c-4.02.4-7.68 2-10.64 4.42l2.84 2.86c2.22-1.72 4.88-2.88 7.8-3.24zM11.38 14.2l-2.86-2.84C6.1 14.32 4.5 17.98 4.1 22h4.04c.36-2.92 1.52-5.58 3.24-7.8zM8.14 26H4.1c.4 4.02 2 7.68 4.42 10.64l2.86-2.86C9.66 31.58 8.5 28.92 8.14 26zm3.22 13.48C14.32 41.9 18 43.5 22 43.9v-4.04c-2.92-.36-5.58-1.52-7.8-3.24l-2.84 2.86zM44 24c0 10.32-7.84 18.84-17.9 19.9v-4.04C33.94 38.82 40 32.1 40 24S33.94 9.18 26.1 8.14V4.1C36.16 5.16 44 13.68 44 24z'/%3E%3C/svg%3E");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    opacity: 0.15;
+    transition: opacity 250ms ease-out;
+  }
+
+  .posts-page .card-title:hover a::before {
+    opacity: 0.4;
+  }
+
+  .card-category,
+  .card-time {
+    color: #aaa;
+  }
+
+  .card-image img {
+    box-shadow: 0 -2px 6px 0 #1e1e1e;
+  }
+
+  .posts-page {
+    border: 2px dashed #333;
+    border-right: none;
+    border-left: none;
+  }
+
+  .grid-card--match .card-image,
+  .card--match .card-image {
+    display: block;
+    border: 1px solid #1e1e1e;
+    background-image: linear-gradient(180deg, #3a3a3a, #1e1e1e);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 8.1 - Load More Button */
+  /* -------------------------------------------------------------------------- */
+
+  .btn-default {
+    background: #2e2e2e;
+    color: #aaa;
+    box-shadow: inset 0 -2px 0 0 #1e1e1e;
+    border: 1px solid #131313;
+  }
+
+  .btn-default:hover {
+    background: linear-gradient(180deg, #3a3a3a, #2e2e2e);
+    color: #ccc;
+    box-shadow: inset 0 -2px 0 0 #1e1e1e;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 9.0 Footer */
+  /* -------------------------------------------------------------------------- */
+
+  .footer-content {
+    background: #131313;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .copyleft {
+    color: #aaa;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .footer-logo {
+    filter: invert(80%) hue-rotate(180deg);
+  }
+
+  .filter__item:hover {
+    color: #ccc;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 10.0 - Search */
+  /* -------------------------------------------------------------------------- */
+
+  .search-dropdown {
+    border: 1px solid #555;
+    color: #ccc;
+  }
+
+  .matches-search-result {
+    background: #3e3e3e;
+  }
+
+  .search-dropdown header {
+    border-bottom: 1px solid #555;
+  }
+
+  .forum-search-result {
+    background: #3e3e3e;
+    border-left: 1px solid #555;
+  }
+
+  .match-search-item .date {
+    color: #e74c3c;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 11.0 - Hall of Fame */
+  /* -------------------------------------------------------------------------- */
+
+  .player_box {
+    background: #2a2a2a;
+    color: #ccc;
+  }
+
+  .record,
+  .record td,
+  .record th {
+    background: #2a2a2a;
+    border-color: #3e3e3e;
+  }
+
+  .player_box span.lable,
+  .record tbody td,
+  ul.honours span {
+    color: #27ae60;
+  }
+
+  ul.honours span {
+    font-weight: bolder;
+  }
+
+  ul.honours li {
+    margin-bottom: 10px;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.0 MATCH PAGES */
+  /* -------------------------------------------------------------------------- */
+
+  #mainBox.mp {
+    background: #2e2e2e;
+  }
+
+  .mph-main {
+    background: #2e2e2e;
+    border-right: 1px solid black;
+  }
+
+  .mph-facts {
+    background-color: #252525;
+  }
+
+  .mph-team {
+    background: #242424;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    box-shadow: inset 0px 1px 5px 0px #111
+      /*, inset 0px -2px 0px -1px rgba(196, 196, 196, 0.5)*/
+    ;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.2);
+    border-top-color: #111;
+  }
+
+  .mph-score,
+  .mph-teamname-text {
+    color: #ccc;
+  }
+
+  .mph-other-scores {
+    border-top: 1px solid #aaa;
+    color: #aaa;
+  }
+
+  .quick-incidents .icon-r-arrow,
+  .quick-incidents .icon-l-arrow {
+    filter: invert(0.8);
+  }
+
+  .quick-incidents ul li.team,
+  .quick-incidents ul li.type {
+    color: #bbb;
+  }
+
+  .quick-incidents ul li {
+    color: #999;
+  }
+
+  .mph-facts a {
+    color: #c0392b;
+  }
+
+  .mph {
+    border-bottom: 1px solid black;
+  }
+
+  .video-section {
+    background: transparent;
+  }
+
+  .video-section:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/pics/fabric-bg.jpg") repeat;
+    filter: invert(0.8);
+    box-shadow: none;
+  }
+
+  .vid-control {
+    background: rgba(0, 0, 0, .08);
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .embed-card {
+    background: #2e2e2e;
+    border: 1px solid #2a2a2a;
+  }
+
+  .embed-card-title {
+    color: #ccc;
+  }
+
+  .embed-play {
+    border: 8px solid #ccc;
+    box-shadow: inset 0 0 20px 5px #aaa;
+  }
+
+  .embed-play::before {
+    border-color: transparent transparent transparent #ccc;
+  }
+
+  .postcard {
+    background: #2e2e2e;
+    color: #ddd;
+  }
+
+  .no-spoilers .embed-card-title {
+    color: transparent;
+  }
+
+  .no-spoilers .embed-card-title>a[href^="https://www.youtube.com"] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    padding: 10px 0;
+    color: transparent;
+  }
+
+  .no-spoilers .embed-card-title>a[href^="https://www.youtube.com"]::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid #a5a5a5;
+  }
+
+  .no-spoilers .embed-card-title>a[href^="https://www.youtube.com"]::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: calc(50% - 8px);
+    border: 16px solid transparent;
+    border-left: 25px solid #ccc;
+    border-radius: 2px;
+  }
+
+  .no-spoilers .embed-card-title>a[href^="https://www.youtube.com"]:hover::before {
+    border-color: #ccc;
+    transform: scale(1.1) translateX(-45%);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, .4);
+  }
+
+  .no-spoilers .embed-card-title>a[href^="https://www.youtube.com"]:hover::after {
+    border-left-color: #ddd;
+    transform: scale(1.1) translateX(4%);
+  }
+
+  .no-spoilers .embed-card-media::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-bottom: 1px solid #222;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.1 - Formations */
+  /* -------------------------------------------------------------------------- */
+
+  .formations {
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .formations .team-header,
+  .formations .footer,
+  .formations .footer-header {
+    background: #2e2e2e;
+    color: #ccc;
+  }
+
+  .formations .formation {
+    background: #3e3e3e;
+    border: 1px solid #1e1e1e;
+  }
+
+  .formations .footer-segment,
+  .formations .footer-home,
+  .formations .footer-away {
+    border-color: #1e1e1e;
+  }
+
+  .formations .sub-detail {
+    color: #aaa;
+  }
+
+  .formations .field,
+  .formations.probable .field,
+  .formations .squad {
+    background-color: #4c9746;
+  }
+
+  .formations .unavailable-player {
+    border-bottom-color: #666;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.2 - Stats */
+  /* -------------------------------------------------------------------------- */
+
+  .match-stats {
+    border: 1px solid black;
+    background: #2e2e2e;
+    box-shadow: 0 2px 3px 1px black;
+  }
+
+  .match-stats .stat-name {
+    color: #ccc;
+  }
+
+  .match-stats .stat-value span {
+    background: #2e2e2e;
+  }
+
+  .match-stats .progress {
+    background: #e74c3c;
+  }
+
+  .match-stats .progress .progress-bar {
+    background: #2ecc71;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.3 - Match Poll */
+  /* -------------------------------------------------------------------------- */
+
+  motm-poll {
+    background: #2e2e2e;
+    border: 1px solid black;
+    box-shadow: 0 2px 3px 1px black;
+  }
+
+  .motm-poll-choice {
+    border-left: 1px solid #1e1e1e;
+  }
+
+  .motm-poll-choice .overlay {
+    background: #27ae60;
+    border: none;
+  }
+
+  .motm-poll-choice .name {
+    color: #ddd;
+  }
+
+  .motm-poll-choice:first-child .percent {
+    color: #c41402;
+    font-weight: bold;
+  }
+
+  .motm-poll-choice:first-child .overlay {
+    border: none;
+  }
+
+  .motm-poll-choice .percent {
+    color: #f39c12;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.4 - Ratings */
+  /* -------------------------------------------------------------------------- */
+
+  .ratings {
+    background: #555;
+    box-shadow: 0 2px 3px 1px black;
+  }
+
+  .ratings-header {
+    background: #3e3e3e;
+    color: #ccc;
+  }
+
+  .ratings-header .desc {
+    font-family: Rubik, Open sans;
+    font-size: 16px;
+    line-height: 30px;
+    color: #b1b1b1;
+  }
+
+  .gauge li {
+    color: #ccc !important;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 12.5 - Comments */
+  /* -------------------------------------------------------------------------- */
+
+  .comments-header {
+    background: #252525;
+    border-color: black;
+  }
+
+  .comment-list {
+    border-color: black;
+    background: #2e2e2e;
+  }
+
+  .comment,
+  .comment-section-header,
+  .show-parent-comment {
+    border-color: black;
+  }
+
+  .comment-section-header {
+    box-shadow: 0 1px 3px -1px #1e1e1e;
+    color: #ccc;
+  }
+
+  .reply-comment {
+    background: #3e3e3e;
+  }
+
+  .comment-header,
+  .comment-text,
+  .comment-author {
+    color: #ccc;
+  }
+
+  .comment-footer {
+    color: #aaa;
+  }
+
+  .comment-dropdown {
+    background: #2e2e2e;
+  }
+
+  .comment-content header img {
+    filter: none;
+  }
+
+  .info-box,
+  #commenter .comment-input {
+    background-color: #3e3e3e;
+    color: #ccc;
+  }
+
+  #commenter .box {
+    border: 1px solid black;
+    background: #2e2e2e;
+  }
+
+  #commenter .control {
+    border-top: 1px solid black;
+    background: #2e2e2e;
+  }
+
+  #commenter .right-menu li {
+    border-left: 1px solid black;
+  }
+
+  .load-more-comments {
+    background: linear-gradient(180deg, #3a3a3a, #2e2e2e);
+    border: 1px solid #131313;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px -4px black, inset 0 0 3px 0 #1e1e1e;
+    text-shadow: none;
+    font-weight: bold;
+    color: #ccc;
+  }
+
+  .comment-list .comment-section-header:nth-child(1)~.comment .comment-content::before {
+    content: "Top Comment";
+    position: absolute;
+    height: auto;
+    width: auto;
+    right: 20px;
+    font-weight: bold;
+    padding: 5px 10px 5px 30px;
+    line-height: 16px;
+    background: #2196f3 no-repeat 10px 5px / 15px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 200 200' %3E%3Cg id='star' style='fill:%23fff' transform='matrix(100.47 0 0 99.502 100 99.502)' %3E%3Cg id='cone' style='fill:%23fff' %3E%3Cpolygon id='triangle' style='fill:%23fff' points='0 0 0 1 0.5 1' transform='matrix(.95106 .30902 -.30902 .95106 0 -1)' /%3E%3Cuse id='use2189' style='fill:%23fff' xlink:href='%23triangle' transform='scale(-1,1)' height='600' width='900' y='0' x='0' /%3E%3C/g %3E%3Cuse id='use2191' style='fill:%23fff' xlink:href='%23cone' transform='rotate(72.001)' height='600' width='900' y='0' x='0' /%3E%3Cuse id='use2193' style='fill:%23fff' xlink:href='%23cone' transform='rotate(-72.001)' height='600' width='900' y='0' x='0' /%3E%3Cuse id='use2195' style='fill:%23fff' xlink:href='%23cone' transform='rotate(144)' height='600' width='900' y='0' x='0' /%3E%3Cuse id='use2197' style='fill:%23fff' xlink:href='%23cone' transform='rotate(216)' height='600' width='900' y='0' x='0' /%3E%3C/g%3E%3C/svg%3E");
+    border-radius: 100vw;
+    color: #ddd;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 13.0 - DMCA, Feedback */
+  /* -------------------------------------------------------------------------- */
+
+  .main-box {
+    background: #2e2e2e;
+    box-shadow: 0 0 4px 0 #131313;
+    border-top: 1px solid #131313;
+    border-bottom: 1px solid #131313;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 14.0 - Signup */
+  /* -------------------------------------------------------------------------- */
+
+  .wideBox {
+    margin: 0
+  }
+
+  .signup-logo {
+    filter: invert(1);
+  }
+
+  .signup-title {
+    font-family: sans-serif;
+  }
+
+  .signup-well {
+    border: 1px solid black;
+    background: #2e2e2e;
+  }
+
+  .signup-well hr {
+    border-top: 1px solid black;
+  }
+
+  .signup-well .form-control:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.3);
+  }
+
+  .signup-well .has-error .form-control:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px rgba(206, 132, 131, 0.3);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 15.0 - Forum */
+  /* -------------------------------------------------------------------------- */
+
+  .site-tree.forum {
+    font-size: 1.3em;
+    background-color: #2e2e2e;
+    background-image: linear-gradient(180deg, #222 50%, #2e2e2e);
+    color: #aaa;
+  }
+
+  .site-tree.forum a.last {
+    color: #aaa;
+  }
+
+  .island {
+    background-color: #3e3e3e;
+    border-color: #131313;
+  }
+
+  .categories ul li {
+    border-top: 1px dashed black;
+  }
+
+  .categories .count {
+    color: #bbb;
+  }
+
+  .category-name {
+    font-weight: bold;
+  }
+
+  .forum .leftColumn {
+    background: #2e2e2e;
+    box-shadow: 0 0 6px 1px black;
+    border-radius: 5px;
+  }
+
+  #posts .filter li {
+    border-color: #131313;
+    box-shadow: none;
+  }
+
+  #posts .filter li.active {
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #3e3e3e;
+    color: #ccc;
+  }
+
+  #posts .headings li {
+    filter: brightness(1.2);
+  }
+
+  #posts .headings .lastreply {
+    background: transparent;
+  }
+
+  #posts .headings .lastreply::after {
+    content: "Last Reply";
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+  }
+
+  .posts {
+    background-color: #3e3e3e;
+    border-top-color: #131313;
+  }
+
+  .posts li {
+    border-bottom: 1px dashed black;
+  }
+
+  .posts .category {
+    background-color: #2e6c9b;
+    color: #ccc;
+  }
+
+  .posts .replies {
+    background-color: #3e91ee;
+  }
+
+  .posts .views {
+    background-color: #63b031;
+  }
+
+  .forum .pagination {
+    margin-bottom: 15px;
+  }
+
+  .pagination>li>a,
+  .pagination>li>span {
+    color: #ccc;
+  }
+
+  .pagination>li>a,
+  .pagination>li>span,
+  .pagination>.disabled>span,
+  .pagination>.disabled>a,
+  .pagination>.disabled>a:focus,
+  .pagination>.disabled>a:hover,
+  .pagination>.disabled>span:focus,
+  .pagination>.disabled>span:hover {
+    background-color: #454545;
+    border-color: #2a2a2a;
+  }
+
+  .pagination>.active>a,
+  .pagination>.active>a:focus,
+  .pagination>.active>a:hover,
+  .pagination>.active>span,
+  .pagination>.active>span:focus,
+  .pagination>.active>span:hover {
+    background-color: #2196f3;
+    border-color: #2196f3;
+  }
+
+  .pagination>li>a:focus,
+  .pagination>li>a:hover,
+  .pagination>li>span:focus,
+  .pagination>li>span:hover {
+    color: #ddd;
+    background-color: rgba(33, 150, 243, .8);
+    border-color: #337ab7;
+  }
+
+  .forum .leftColumn .comment-list {
+    width: calc(100% + 2px);
+    left: -1px;
+    background-color: #3e3e3e;
+  }
+
+  .aheader.medium {
+    padding-left: 20px;
+  }
+
+  .aheader.small {
+    padding-left: 10px;
+  }
+
+  .forum .mt10.text-center {
+    margin-bottom: 10px;
+  }
+
+  .markdown-view blockquote,
+  .poll,
+  .poll-footer {
+    background-color: #2a2a2a;
+    border-color: #1e1e1e;
+  }
+
+  .poll-result-votes {
+    background-color: #666;
+  }
+}
+
+@-moz-document url-prefix("https://footyroom.co/privacy-policy.html"),
+url-prefix("https://footyroom.com/privacy-policy.html") {
+  /* -------------------------------------------------------------------------- */
+  /* Privacy Policy */
+  /* -------------------------------------------------------------------------- */
+
+  html,
+  body,
+  div {
+    background: #1e1e1e !important;
+    color: #aaa !important;
+  }
+}
+
+@-moz-document domain("headway-widget.net") {
+  /* -------------------------------------------------------------------------- */
+  /* Changelog */
+  /* -------------------------------------------------------------------------- */
+
+  .outercont {
+    color: #ccc;
+  }
+
+  .outercont .innercont .topBar {
+    border-color: #131313;
+  }
+
+  .outercont .innercont strong,
+  .outercont .innercont .logDetailsItem .slideBody p {
+    color: #3778ff;
+  }
+
+  .outercont .innercont .logItem {
+    color: #aaa;
+  }
+
+  .outercont .innercont .footer {
+    background: #232323;
+    border-color: #1e1e1e;
+  }
+}
+
+@-moz-document url-prefix("https://platform.twitter.com") {
+
+  /* Twitter */
+  .r-14lw9ot {
+    background-color: #2a2a2a;
+  }
+
+  #app:hover .r-1u4rsef {
+    background-color: #222;
+  }
+
+  .r-vqp9x9 {
+    background-color: #2e2e2e;
+  }
+
+  .css-1dbjc4n {
+    border-color: #131313;
+  }
+
+  .r-hkyrab,
+  .css-901oao,
+  .r-1re7ezh {
+    color: #ccc;
+  }
+}
