@@ -3,13 +3,14 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.0.3
+@version        1.1.0
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
 ==/UserStyle== */
 
 @-moz-document domain("footyroom.com"), domain("footyroom.co") {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
   /* -------------------------------------------------------------------------- */
   /*
 TABLE OF CONTENTS
@@ -69,7 +70,7 @@ TABLE OF CONTENTS
 
   html,
   body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #ccc;
     background-color: #1e1e1e;
     background-image: url(https://i.imgur.com/H0t5Enc.png);
@@ -1416,7 +1417,7 @@ TABLE OF CONTENTS
   }
 
   .fr-datepicker .years-select {
-    -moz-appearance: none;
+    appearance: none;
     display: inline-block;
     font-size: 25px;
     font-weight: bold;
