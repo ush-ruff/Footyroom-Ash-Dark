@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.1.0
+@version        1.2.0
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -1040,6 +1040,33 @@ TABLE OF CONTENTS
     font-weight: 500;
     border-bottom-color: #aaa;
     color: #ccc;
+  }
+
+  .table-cell--name {
+    display: grid;
+    grid-template-columns: 18px 25px 1fr;
+    gap: 5px;
+  }
+
+  .table-movement {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .table-badge {
+    width: 20px;
+    margin: 0 auto;
+  }
+
+  .table-movement.icn-tick-down::before, 
+  .table-movement.icn-tick-up::before {
+    font-size: 20px;
+  }
+
+  .table-movement--still::after {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
   }
 
   /* -------------------------------------------------------------------------- */
