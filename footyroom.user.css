@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.3.4
+@version        1.3.5
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -95,12 +95,14 @@
     color: #aaa;
   }
 
-  .main-nav li.is-active,
+  .main-nav li.is-active, 
   .main-nav li:hover {
-    background: linear-gradient(180deg, #232323, #131313);
-    border-radius: 5px;
-    color: #ddd;
-  }
+	background: linear-gradient(180deg, #232323, #131313);
+  border-bottom: 1px solid #333;
+	border-radius: 5px;
+	color: #ddd;
+  box-shadow: inset 0 2px 5px 1px #000;
+}
 
   .bar-nav li:hover {
     color: #eee;
