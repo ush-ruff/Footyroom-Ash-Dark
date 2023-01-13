@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.3.6
+@version        1.3.7
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -1629,6 +1629,10 @@
     color: #e74c3c;
   }
 
+  .search-msg {
+    background-color: #333;
+  }
+
   /* -------------------------------------------------------------------------- */
   /* 11.0 - Hall of Fame */
   /* -------------------------------------------------------------------------- */
@@ -1732,6 +1736,10 @@
     background: url("/pics/fabric-bg.jpg") repeat;
     filter: invert(0.8);
     box-shadow: none;
+  }
+
+  .video-section--preview {
+    border-bottom: 1px solid black;
   }
 
   .vid-control {
