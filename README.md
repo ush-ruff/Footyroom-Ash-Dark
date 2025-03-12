@@ -2,13 +2,13 @@
 This is a dark userstyle for Footyroom. It completely restyles the website to dark and redesigns some elements to better fit in with the theme. 
 
 ## Install and setup
-In order to use this theme or any other userstyles you will need to install a browser extension. I recommend using the following.
+In order to use this theme or any other userstyles you will need to install a browser extension. I recommend using the Stylus extension.
 
-### Browser extension: 
-Stylus - get the addon for: 
-* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-* [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) 
-* [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
+### Browser extension:
+Get the Stylus addon for:
+
+[![Firefox](https://raw.githubusercontent.com/ush-ruff/Common/refs/heads/main/Icons/Browsers/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+[![Chrome](https://raw.githubusercontent.com/ush-ruff/Common/refs/heads/main/Icons/Browsers/chrome.png)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
 ### Install this theme:
 Once you have installed the browser extension click on the link below to install this theme.
