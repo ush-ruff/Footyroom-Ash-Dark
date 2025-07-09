@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.4.0
+@version        1.4.1
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -1212,7 +1212,7 @@
 
   .knockout-matches::after {
     background: url(https://i.imgur.com/3kwwUio.png) no-repeat center -50px / 1600px;
-    z-index: -1;
+    z-index: -2;
   }
 
   .ko-match {
