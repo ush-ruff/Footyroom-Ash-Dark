@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.4.1
+@version        1.4.2
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -882,16 +882,17 @@
 
   .site-tree-select,
   .stage-select {
-    background: #3e3e3e;
+    background-color: #3e3e3e;
     box-shadow: inset 0 -1px 0 1px rgba(30, 30, 30, .5), 0 0 6px 0 #1e1e1e;
     border: 1px solid #131313;
     padding-right: 28px;
     cursor: pointer;
+    scrollbar-width: thin;
   }
 
   .site-tree-select:hover,
   .stage-select:hover {
-    background: linear-gradient(180deg, #4a4a4a, #3e3e3e);
+    background-image: linear-gradient(180deg, #4a4a4a, #3e3e3e);
     box-shadow: inset 0 -1px 0 1px rgba(40, 40, 40, .5), 0 0 6px 0 #1e1e1e;
   }
 
