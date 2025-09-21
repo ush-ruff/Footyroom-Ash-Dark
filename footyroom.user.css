@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.4.2
+@version        1.4.3
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -717,7 +717,11 @@
   }
 
   .ls-match-strip .red-card {
+    font-family: Roboto, sans-serif;
+    padding-block: 1px;
+    padding-inline-end: 4px;
     background: #ce2128;
+    border-radius: 2px;
   }
 
   .ls-match-extra {
