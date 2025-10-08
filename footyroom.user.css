@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.4.3
+@version        1.4.4
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -1183,6 +1183,30 @@
   .guide-col-leg:not(.guide-leg-1) .guide-match-team:nth-child(3n+1) {
     background-color: rgba(70, 223, 123, .55);
     border-radius: 8px 8px 0 0;
+  }
+
+  .tournament-guide-logo[src="/pics/uefacl.png"] {
+    filter: invert(1);
+  }
+
+  .site-tree:has(.site-tree-competition[href*="/champions-league"]) ~ #mainBox {
+    .knockout-matches::after {
+      background-image: url(https://i.imgur.com/GZlRGC5.png);
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .bracket::after {
+      border-color: #aaa;
+    }
+    
+    .ko-match .team:nth-of-type(1) {
+      background-color: rgba(61, 168, 255, .55);
+    }
+    
+    .ko-match .team:nth-of-type(3) {
+      background-color: rgba(223, 70, 180, .55);
+    }
   }
 
   /* -------------------------------------------------------------------------- */
