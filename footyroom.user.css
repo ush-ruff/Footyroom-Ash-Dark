@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Footyroom-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Footyroom-Ash-Dark/raw/main/footyroom.user.css
-@version        1.4.8
+@version        1.4.9
 @description    A dark userstyle for footyroom.
 @author         ushruff
 @license        GNU GPLv3
@@ -341,7 +341,7 @@
     background-color: #252525;
     color: #bbb;
 
-    &h1 {
+    h1& {
       box-shadow: 0 2px 3px 1px #000;
       
     }
